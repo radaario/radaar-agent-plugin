@@ -10,18 +10,17 @@ This plugin connects AI agents to RADAAR's MCP server, enabling social media man
 
 ```
 radaar/
-├── plugin.json                          # Plugin manifest (v26.8.20)
-├── mcp.json                             # MCP server config (streamable-http)
+├── plugin.json                             # Plugin manifest (v26.8.20)
+├── mcp.json                                # MCP server config (streamable-http)
 ├── skills/
-│   ├── subscription-management/SKILL.md # Subscriptions, brands, channels, team, settings
-│   ├── social-inbox/SKILL.md            # Conversations, messages, contacts
-│   ├── social-media-monitoring/SKILL.md # Keyword & brand monitoring
-│   ├── social-media-publishing/SKILL.md  # Post creation, scheduling, content pool
-│   ├── social-media-analytics/SKILL.md   # Performance analytics & reporting
-│   ├── link-management/SKILL.md         # URL shortener with custom domains
-│   ├── task-management/SKILL.md         # Kanban boards, lists, cards
-│   └── utilities/SKILL.md                # Hashtags, AI images, stock media, web tools
-
+│   ├── subscription-management/SKILL.md    # Subscriptions, brands, channels, team, settings
+│   ├── social-inbox/SKILL.md               # Conversations, messages, contacts
+│   ├── social-media-monitoring/SKILL.md    # Keyword & brand monitoring
+│   ├── social-media-publishing/SKILL.md    # Post creation, scheduling, content pool
+│   ├── social-media-analytics/SKILL.md     # Performance analytics & reporting
+│   ├── utilities/SKILL.md                  # Hashtags, AI images, stock media, web tools
+│   ├── link-management/SKILL.md            # URL shortener with custom domains
+│   └── task-management/SKILL.md            # Kanban boards, lists, cards
 ├── LICENSE
 └── README.md
 ```
@@ -38,29 +37,28 @@ The plugin connects to RADAAR's remote MCP server via Streamable HTTP:
 
 | Skill | Description |
 |---|---|
-| `social-media-publishing` | Create, schedule, and manage posts with media, threads, polls, and per-platform variations |
-| `social-media-analytics` | Retrieve performance data from channel and custom analytics boards |
+| `subscription-management` | Subscriptions, brands, channels, team members, labels, integrations, domains |
 | `social-inbox` | Manage conversations, messages, and contacts across DMs, comments, mentions |
 | `social-media-monitoring` | Track keywords and brand mentions with language filtering and sentiment |
+| `social-media-publishing` | Create, schedule, and manage posts with media, threads, polls, and per-platform variations |
+| `social-media-analytics` | Retrieve performance data from channel and custom analytics boards |
 | `utilities` | Hashtags, captions, AI image generation, stock media, Google search, web scraping |
-| `task-management` | Kanban boards with lists and cards for team task tracking |
 | `link-management` | URL shortener with custom domains and branded slugs |
-| `subscription-management` | Subscriptions, brands, channels, team members, labels, integrations, domains |
+| `task-management` | Kanban boards with lists and cards for team task tracking |
 
 ## Available Tools (80+)
 
 | Category | Tools |
 |---|---|
-| **Subscriptions** | List subscriptions, get user profile |
-| **Publishing** | Create/update/schedule/duplicate/delete posts; media upload/update/delete; links; content pool; best times |
-| **Analytics** | Boards (channel & custom), sections, widgets, data with date ranges |
+| **Subscriptions** | List subscriptions |
 | **Inbox** | Conversations, messages (send/like/hide/delete), contacts |
 | **Monitoring** | Queries (create/update/delete with language filters), results (sentiment, labels, assign) |
-| **Content** | Hashtag search/related/top/templates, caption templates, AI image generation, stock images & videos |
-| **Tasks** | Boards, lists (columns), cards (tasks) — full CRUD |
+| **Publishing** | Create/update/schedule/duplicate/delete posts; media upload/update/delete; links; content pool; best times |
+| **Analytics** | Boards (channel & custom), sections, widgets, data with date ranges |
+| **Utilities** | Hashtag search/related/top/templates, caption templates, AI image generation, stock images & videos, Google search (web & image), URL fetch, URL screenshot |
 | **Links** | URL shortener with custom domains and suffixes |
 | **Settings** | Brands, channels, team members, labels, integrations, custom domains, activity logs, sessions, invoices |
-| **Utilities** | Google search (web & image), URL fetch, URL screenshot |
+| **Tasks** | Boards, lists (columns), cards (tasks) — full CRUD |
 
 ## Authentication
 
