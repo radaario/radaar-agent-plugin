@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "radaar",
+  "version": "26.8.20",
+  "description": "RADAAR social media management platform plugin for AI agents. Publish content, analyze performance, manage inbox conversations, monitor keywords, and automate social media workflows.",
+  "author": {
+    "name": "RADAAR",
+    "email": "support@radaar.io",
+    "url": "https://www.radaar.io"
+  },
+  "homepage": "https://www.radaar.io",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "radaar",
+    "publishing",
+    "analytics",
+    "inbox",
+    "monitoring",
+    "scheduler",
+    "mcp"
+  ]
+}
