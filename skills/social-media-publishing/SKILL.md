@@ -1,5 +1,5 @@
 ---
-name: social-publishing
+name: social-media-publishing
 description: Create, schedule, duplicate, and manage social media posts across multiple platforms using RADAAR. Use when the user wants to publish content, schedule posts for later, manage post media and links, or work with the content pool. Covers Scheduler Posts and Pool Content operations including threads, polls, per-platform variations, and media attachments.
 ---
 

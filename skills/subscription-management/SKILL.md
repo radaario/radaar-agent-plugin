@@ -1,11 +1,11 @@
 ---
-name: account-management
-description: Manage RADAAR account settings including subscriptions (workspaces), brands, channels, team members, labels, integrations, custom domains, activity logs, invoices, sessions, and user profile. Use when the user wants to list subscriptions, configure their RADAAR workspace, manage team access, connect social channels, or review account activity. The subscriptions_list tool is required as a first step for almost all RADAAR operations.
+name: subscription-management
+description: Manage RADAAR account settings including subscriptions, brands, channels, team members, labels, integrations, custom domains, activity logs, invoices, sessions, and user profile. Use when the user wants to list subscriptions, configure their RADAAR subscription, manage team access, connect social channels, or review account activity. The subscriptions_list tool is required as a first step for almost all RADAAR operations.
 ---
 
 # Account Management
 
-Use RADAAR's settings tools to manage subscriptions, brands, channels, team, and workspace configuration.
+Use RADAAR's settings tools to manage subscriptions, brands, channels, team, and subscription configuration.
 
 ## Key Concept
 
@@ -14,7 +14,7 @@ Use RADAAR's settings tools to manage subscriptions, brands, channels, team, and
 ## Available Tools
 
 ### Subscriptions
-- `subscriptions_list` — List all subscriptions (workspaces). Returns `id` (integer — use as `workspace_id`) and `key` (UUID — do NOT use as `workspace_id`). This is the entry point for all other operations.
+- `subscriptions_list` — List all subscriptions. Returns `id` (integer — use as `workspace_id`) and `key` (UUID — do NOT use as `workspace_id`). This is the entry point for all other operations.
 
 ### User Profile
 - `user_profile_get` — Get the authenticated user's profile. Use `user.id` (integer) for `user_id`, NOT `.key`.

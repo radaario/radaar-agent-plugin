@@ -1,5 +1,5 @@
 ---
-name: social-monitoring
+name: social-media-monitoring
 description: Monitor social media for keywords, brand mentions, and competitor activity using RADAAR. Use when the user wants to track keywords, monitor brand mentions, analyze sentiment, or watch competitor activity across social platforms. Supports language filtering, excluded/banned keywords, and result management with labels, assignments, and sentiment ratings.
 ---
 

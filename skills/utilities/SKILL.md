@@ -1,5 +1,5 @@
 ---
-name: content-tools
+name: utilities
 description: Generate and discover content for social media posts using RADAAR's creative tools. Use when the user needs hashtag suggestions, caption templates, AI-generated images, stock photos or videos, web content extraction, Google search (web and image), or URL screenshots. Covers Hashtags, Captions, AI Image generation, Stock Library (Unsplash, Pexels, Pixabay, Giphy, etc.), and web utilities.
 ---
 

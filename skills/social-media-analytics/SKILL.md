@@ -1,5 +1,5 @@
 ---
-name: social-analytics
+name: social-media-analytics
 description: Retrieve and analyze social media performance data from RADAAR. Use when the user wants analytics reports, performance metrics, engagement data, reach statistics, or insights about their social media channels. Covers Analytics Boards (CHANNEL and CUSTOM types), Sections, Widgets, and Data with predefined or custom date ranges.
 ---
 
