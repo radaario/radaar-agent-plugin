@@ -107,7 +107,7 @@ Add to your VS Code settings (`.vscode/mcp.json` or user settings):
 ```json
 {
   "servers": {
-    "radaar": {
+    "RADAAR": {
       "type": "streamable-http",
       "url": "https://mcp.radaar.io",
       "headers": {
@@ -127,7 +127,7 @@ Add to your Cursor MCP settings (`.cursor/mcp.json`):
 ```json
 {
   "mcpServers": {
-    "radaar": {
+    "RADAAR": {
       "type": "streamable-http",
       "url": "https://mcp.radaar.io",
       "headers": {
@@ -145,7 +145,7 @@ Add to your Windsurf MCP configuration (`~/.windsurf/mcp.json`):
 ```json
 {
   "mcpServers": {
-    "radaar": {
+    "RADAAR": {
       "type": "streamable-http",
       "url": "https://mcp.radaar.io",
       "headers": {
