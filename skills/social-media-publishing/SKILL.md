@@ -16,9 +16,9 @@ Use RADAAR's publishing tools to create and schedule social media posts across c
 ## Available Tools
 
 ### Scheduler Posts
-- `publishing_scheduler_posts_list` — List/filter scheduled posts by status (DRAFT, SCHEDULED, PUBLISHED, ERROR), content type, channels, brands, labels, date range.
-- `publishing_scheduler_post_create` — Create a new post as draft. Supports content types: SINGLE_IMAGE, PHOTO_ALBUM, CAROUSEL, VIDEO, REEL, STORY, TEXT, POLL, LINK. Supports per-platform `content_variations`, `floods` (threads), and `poll` config.
-- `publishing_scheduler_post_update` — Update an existing post's content, channels, schedule time, or workflow status.
+- `publishing_scheduler_posts_list` — List/filter scheduled posts by status (DRAFT, WAITING_TO_BE_APPROVED, SCHEDULED, IN_PROGRESS, PUBLISHED, ERROR), content type, channels, brands, labels, date range.
+- `publishing_scheduler_post_create` — Create a new post as draft. Supports content types: SINGLE_IMAGE, PHOTO_ALBUM, CAROUSEL, VIDEO, REEL, STORY, TEXT, POLL, LINK. Supports per-platform `content_variations`, `floods` (threads), `poll` config, and `wr_process_status` (DRAFT, WAITING_TO_BE_APPROVED, SCHEDULED).
+- `publishing_scheduler_post_update` — Update an existing post's content, channels, schedule time, or workflow status (`wr_process_status`: DRAFT, WAITING_TO_BE_APPROVED, SCHEDULED).
 - `publishing_scheduler_post_schedule` — Move a draft post to SCHEDULED status for automated publishing.
 - `publishing_scheduler_post_duplicate` — Clone a post to scheduler or content pool (`target_service`: PUBLISHING_SCHEDULER or PUBLISHING_POOL).
 - `publishing_scheduler_post_delete` — Permanently delete a post (irreversible).
@@ -41,12 +41,13 @@ Use RADAAR's publishing tools to create and schedule social media posts across c
 - `publishing_pool_content_media_link_update` — Update an attached link URL.
 
 ### Best Times
-- `publishing_utilities_best_times_to_post_list` — Get optimal posting times based on audience engagement. Accepts optional `timezone` (IANA format).
+- `publishing_utilities_best_times_to_post_list_according_to_timezone` — Get recommended best times to post based on a timezone's audience engagement data. Provide an IANA timezone identifier (e.g. America/New_York, Europe/Istanbul).
+- `publishing_utilities_best_times_to_post_list_according_to_channel` — Get recommended best times to post based on a specific channel's audience engagement data. Requires `channel_key` with `PUBLISHING_SCHEDULER_BEST_TIMES_TO_POST` feature.
 
 ## Workflow
 
 1. Get `workspace_id` from `subscriptions_list`.
-2. Check best times with `publishing_utilities_best_times_to_post_list`.
+2. Check best times with `publishing_utilities_best_times_to_post_list_according_to_timezone` or `publishing_utilities_best_times_to_post_list_according_to_channel`.
 3. Create a post with `publishing_scheduler_post_create` (saves as draft).
 4. Attach media with `publishing_scheduler_post_media_file_upload` or link with `publishing_scheduler_post_media_link_add`.
 5. Schedule with `publishing_scheduler_post_schedule`.

@@ -1,0 +1,57 @@
+{
+  "name": "@radaario/openclaw-plugin",
+  "version": "26.9.1",
+  "description": "OpenClaw plugin for RADAAR: social media management, publishing, analytics, inbox, monitoring, and more",
+  "license": "MIT",
+  "author": "RADAAR <support@radaar.io>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.8.0"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.52"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radaar/agent-plugin.git",
+    "directory": "openclaw"
+  },
+  "homepage": "https://www.radaar.io",
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "clawhub",
+    "radaar",
+    "social-media",
+    "publishing",
+    "analytics",
+    "inbox",
+    "monitoring",
+    "scheduler"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": "1.0.0"
+    },
+    "build": {
+      "openclawVersion": "2026.8.1"
+    }
+  }
+}
