@@ -2,7 +2,7 @@
   "id": "radaar",
   "name": "RADAAR",
   "description": "Social media management from OpenClaw — publish, schedule, analyze, manage inbox, monitor keywords, shorten links, manage tasks, and more via RADAAR.",
-  "version": "26.9.1",
+  "version": "26.9.2",
   "configSchema": {
     "type": "object",
     "additionalProperties": false,

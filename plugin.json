@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "RADAAR",
-  "version": "26.9.1",
+  "version": "26.9.2",
   "description": "RADAAR social media management platform plugin for AI agents. Publish content, analyze performance, manage inbox conversations, monitor keywords, and automate social media workflows.",
   "author": {
     "name": "RADAAR",
